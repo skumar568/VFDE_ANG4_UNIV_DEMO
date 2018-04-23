@@ -1,7 +1,6 @@
 # compiled output
 /dist
 /tmp
-/out-tsc
 
 # dependencies
 /node_modules
@@ -12,14 +11,6 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
-# e2e
-/e2e/*.js
-/e2e/*.map
-
-# System Files
-.DS_Store
-Thumbs.db
 
 # misc
 LICENSE

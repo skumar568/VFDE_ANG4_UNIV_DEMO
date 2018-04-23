@@ -1,32 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  template: `<h3>{{ message }}</h3>`
 })
 export class HomeComponent implements OnInit {
+  public message: string;
 
-  constructor(meta: Meta, title: Title) { 
-
-    title.setTitle('My Spiffy Home Page');
-
-    meta.addTags([ 
-      {
-        name: 'author', content: 'Coursetro.com'
-      },
-      {
-        name: 'keywords', content: 'angular 4 tutorial, angular seo'
-      },
-      {
-        name: 'description', content: 'This is my great description.'
-      },
-    ])
-
-  }
+  constructor() {}
 
   ngOnInit() {
+    this.message = 'Hello';
   }
-
 }
