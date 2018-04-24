@@ -6,7 +6,7 @@ import {Component} from '@angular/core';
 
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-       
+
         <div class="collapse navbar-collapse topnav">
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -14,21 +14,21 @@ import {Component} from '@angular/core';
                 <li>
             </ul>
             <ul class="nav navbar-nav">
-               
+
                 <li>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mobifunk </a>
-                  
+
                 </li>
                 <li>
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Internet </a>
-              
+
                  </li>
                  <li>
                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Darum Vodaphone </a>
-               
+
              </li>
                 <li class="dropdown">
-                   
+
                     <button class="dropbtn">Vodaphone Login</button>
                     <div class="row dropdown-menu dropdown-content">
                        <ul class="col-sm-3">
@@ -70,7 +70,7 @@ import {Component} from '@angular/core';
                         </ul>
                     </div>
                 </li>
-               
+
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -78,7 +78,7 @@ import {Component} from '@angular/core';
 
 <div class="container">
     <div class="navbar-template text-center">
-        
+
     </div>
 </div>
 
@@ -88,7 +88,7 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
 
-    onClickMe(){
+    onClickMe() {
 
     }
 }

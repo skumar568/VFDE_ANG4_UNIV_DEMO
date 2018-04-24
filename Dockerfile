@@ -17,4 +17,4 @@ RUN npm run build:ssr
 EXPOSE 4000
 
 # Launch application
-CMD ["npm","server:ssr"]
+CMD ["npm","serve:ssr"]
