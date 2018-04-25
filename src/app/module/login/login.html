@@ -1,0 +1,7 @@
+<div class="login" *ngIf="!loginSuccess">
+      <p class="text-center">Login to MainVodafone</p>
+      <input class="form-input" placeholder="user name" type="text" [(ngModel)]="username">
+      <input class="form-input" placeholder="password" type="password"  [(ngModel)]="loginpassword">
+      <button class="btn btn-primary" type="submit" (click)="login()">Login</button>
+  
+</div>

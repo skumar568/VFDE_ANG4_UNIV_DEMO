@@ -1,0 +1,15 @@
+
+.current-bill{
+  width:100%;
+  background: #fff;
+  padding: 20px 20px;
+  font-size: 12px;
+}
+.current-content{
+  margin: 20px auto;
+  height: 30px;
+}
+.current-bill .row{
+  padding:10px 0;
+}
+

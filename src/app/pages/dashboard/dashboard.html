@@ -1,0 +1,22 @@
+<div class="dashboard">
+  <div class="container">
+    <app-welcome></app-welcome>
+    <app-notification></app-notification>
+    <div *ngIf="!show">
+
+    
+      <canvas
+              baseChart
+              [chartType]="'bar'"
+              [datasets]="chartData"
+              [labels]="labels"
+              [options]="chartOptions"
+              [legend]="true"
+              [colors]="colors"
+              (chartClick)="onChartClick($event)"
+              >
+          </canvas>
+        </div>
+  </div>
+</div>
+<!-- <app-modal></app-modal> -->

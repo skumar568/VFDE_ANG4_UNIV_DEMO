@@ -1,11 +1,20 @@
 {
-  "name": "vfde-ang5-univ-demo",
+  "name": "ng-universal-demo",
   "version": "0.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/angular/universal-starter.git"
   },
+  "contributors": [
+    "AngularClass <hello@angularclass.com>",
+    "PatrickJS <patrick@angularclass.com>",
+    "Jeff Whelpley <jeff@gethuman.com>",
+    "Jeff Cross <crossj@google.com>",
+    "Mark Pieszak <mpieszak84@gmail.com>",
+    "Jason Jean <jasonjean1993@gmail.com>",
+    "Fabian Wiles <fabian.wiles@gmail.com>"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -19,9 +28,6 @@
     "serve:prerender": "cd dist/browser && http-server",
     "serve:ssr": "node dist/server"
   },
-  "pre-commit": [
-    "lint"
-  ],
   "private": true,
   "dependencies": {
     "@angular/animations": "^5.0.0",
@@ -37,9 +43,12 @@
     "@nguniversal/common": "^5.0.0-beta.8",
     "@nguniversal/express-engine": "^5.0.0-beta.8",
     "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.8",
+    "bootstrap": "^4.1.0",
     "core-js": "^2.4.1",
-    "rxjs": "^5.5.2",
-    "zone.js": "^0.8.14"
+    "jquery": "^3.3.1",
+    "ng2-charts": "^1.6.0",
+    "rxjs": "^5.5.10",
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular/cli": "^1.5.0",

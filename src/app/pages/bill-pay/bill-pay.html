@@ -1,0 +1,22 @@
+<div class="dashboard">
+  <div class="container">
+    <app-welcome></app-welcome>
+
+    
+      <canvas
+              baseChart
+              [chartType]="'bar'"
+              [datasets]="chartData"
+              [labels]="labels"
+              [options]="chartOptions"
+              [legend]="true"
+              [colors]="colors"
+              (chartClick)="onChartClick($event)"
+              >
+          </canvas>
+          <app-current-bill></app-current-bill>
+          <app-bill-past></app-bill-past>
+       
+  </div>
+</div>
+<!-- <app-modal></app-modal> -->
