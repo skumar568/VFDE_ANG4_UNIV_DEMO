@@ -21,6 +21,7 @@ import { ChartsModule } from 'ng2-charts';
 import { UserManagementComponent } from './pages/user-management/user-management.component';
 import { BillPayComponent } from './pages/bill-pay/bill-pay.component';
 import { JsonService } from './services/jsonServices.service';
+import { NotificationService } from './notification.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +52,7 @@ import { JsonService } from './services/jsonServices.service';
     ]),
     TransferHttpCacheModule
   ],
-  providers: [JsonService],
+  providers: [JsonService, NotificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

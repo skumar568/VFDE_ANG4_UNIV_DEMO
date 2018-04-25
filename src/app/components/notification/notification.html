@@ -8,15 +8,15 @@
         </div>
       </div>
 
-          <!-- <div class="row" *ngFor="let item of notification.notifications|item.role='admin'">
+          <<div class="row" *ngFor="let notification of notifications">
               <div class="col-lg-1"><img src=""></div>
-              <div class="col-lg-1">121323</div>
-              <div class="col-lg-4">fdsjjds</div>
-              <div class="col-lg-4">dssdsdd ffhkdfk</div>
+              <div class="col-lg-1">{{notification.date}}</div>
+              <div class="col-lg-4">{{notification.title}}</div>
+              <div class="col-lg-4">{{notification.description}}</div>
               <div class="col-lg-1">X</div>
               <div class="col-lg-1">New</div>
               <div>{{item.role}}</div>
-          </div> -->
+          </div>
       </div>
   </div>
 </div>
