@@ -1,20 +1,11 @@
 {
-  "name": "vfde-demo",
-  "version": "0.0.0",
+  "name": "vodafone-demo",
+  "version": "0.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/angular/universal-starter.git"
+    "url": ""
   },
-  "contributors": [
-    "AngularClass <hello@angularclass.com>",
-    "PatrickJS <patrick@angularclass.com>",
-    "Jeff Whelpley <jeff@gethuman.com>",
-    "Jeff Cross <crossj@google.com>",
-    "Mark Pieszak <mpieszak84@gmail.com>",
-    "Jason Jean <jasonjean1993@gmail.com>",
-    "Fabian Wiles <fabian.wiles@gmail.com>"
-  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -44,6 +35,7 @@
     "@nguniversal/express-engine": "^5.0.0-beta.8",
     "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.8",
     "bootstrap": "^4.1.0",
+    "chart.js": "^2.7.2",
     "core-js": "^2.4.1",
     "jquery": "^3.3.1",
     "ng2-charts": "^1.6.0",

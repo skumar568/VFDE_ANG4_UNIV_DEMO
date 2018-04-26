@@ -56,3 +56,16 @@
   outline: none;
   border: none;
 }
+.icon-section{
+  position: absolute;
+  top: 40%;
+  right: 0%;
+}
+.icon-section .icon{
+  margin:10px 20px;
+}
+.icon{
+  width:32px;
+  height:32px;
+  display: inline;
+}

@@ -81,3 +81,9 @@
 .category-button:hover{
   background: #ddd
 }
+
+.icon-euro{
+  width: 10px;
+  height: 10px;
+  padding-bottom: 2px;
+}

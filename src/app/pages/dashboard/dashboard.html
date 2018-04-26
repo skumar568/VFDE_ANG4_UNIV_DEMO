@@ -4,10 +4,14 @@
     <app-notification></app-notification>
     <div *ngIf="!show" class="graph-notification">
 
-      <h4>Rechnung</h4>
+      <h4>Bills</h4>
+      <div>You have a new bill</div>
+      <div class="row">
+          <div class="col-lg-2"> <span class="type">Current bill</span> {{currentBill.amount}} <img class="icon-euro" src="../../../assets/images/euro.png"><span class="divider"></span>. . .</div>
+      </div>
       <canvas
               baseChart
-              [chartType]="bar"
+              [chartType]="'bar'"
               [datasets]="chartData"
               [labels]="labels"
               [options]="chartOptions"
@@ -16,6 +20,7 @@
               (chartClick)="onChartClick($event)"
               >
           </canvas>
+          <a href="/billpay"> &gt; Go to View Bills</a>
         </div>
   </div>
 </div>

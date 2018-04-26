@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.html',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class WelcomeComponent implements OnInit {
   toggleThis: boolean;
   type:any;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     var userType = sessionStorage.getItem('type');
@@ -25,6 +25,12 @@ export class WelcomeComponent implements OnInit {
   }
   toggle() {
     this.toggleThis = !this.toggleThis;
+
+  }
+  logout(){
+    sessionStorage.clear();
+    this.router.navigateByUrl('/');
+    window.location.reload(true);
 
   }
 

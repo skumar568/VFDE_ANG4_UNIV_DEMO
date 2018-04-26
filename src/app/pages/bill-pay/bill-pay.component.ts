@@ -13,7 +13,7 @@ export class BillPayComponent implements OnInit {
   show: boolean;
   colors: any = [
     {
-      backgroundColor: 'rgba(30, 169, 224, 0.8)'
+      backgroundColor: 'rgba(0, 128, 0, 0.8)'
     }
   ];
   chartOptions = {

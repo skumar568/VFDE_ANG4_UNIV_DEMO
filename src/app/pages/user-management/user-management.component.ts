@@ -25,11 +25,12 @@ export class UserManagementComponent implements OnInit {
     this.showModal = false;
     this.hiddenOnClick = false;
   }
-  showThisModal() {
-    this.showModal = !this.showModal;
-  }
+   showThisModal() {
+     this.showModal = true;
+     console.log(this.showModal);
+   }
   hideThis() {
-    this.hiddenOnClick = true;
+    this.showModal =false;
   }
 
 

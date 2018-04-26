@@ -11,9 +11,10 @@ export class DashboardComponent implements OnInit {
   loginType: any;
   chartData: any = [];
   show: boolean;
+  currentBill:any;
   colors: any = [
     { // 2nd Year.
-      backgroundColor: 'rgba(30, 169, 224, 0.8)'
+      backgroundColor: 'rgba(0, 128, 0, 0.8)'
     }
   ];
   chartOptions = {
@@ -30,6 +31,7 @@ export class DashboardComponent implements OnInit {
       this.show = false;
     }
     this.chartData = [];
+  
     let jsonDummyData = {
       'periodbills': [
         {
@@ -70,6 +72,8 @@ export class DashboardComponent implements OnInit {
         }
       ]
     };
+
+    this.currentBill=jsonDummyData.periodbills.slice(0,1)[0];
 
 for (let i = 0; i < jsonDummyData.periodbills.length; i++) {
   this.labels.push(jsonDummyData.periodbills[i].period);
