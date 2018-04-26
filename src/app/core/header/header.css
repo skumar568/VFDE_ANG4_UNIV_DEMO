@@ -87,11 +87,15 @@
 a:hover .dropdown{
   display: block;
   position: fixed;
-    top: 48px;
+    top: 117px;
     left: 0;
     right: 0;
-    background: #eee;
+    background: #ddd;
     z-index: 99999;
+}
+.dropdown ul{
+  list-style: none;
+  text-align: left;
 }
 
 .main {

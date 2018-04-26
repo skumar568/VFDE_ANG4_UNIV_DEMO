@@ -3,6 +3,7 @@
   background: #fff;
   padding: 20px 20px;
   font-size: 12px;
+  margin-top:20px;
 }
 .header-content{
   margin: 20px auto;
@@ -12,3 +13,12 @@
   padding:10px 0;
 }
 
+.icon{
+  display: inline;
+  width:32px;
+  height:32px;
+  margin-right: 10px;
+}
+.divider{
+  padding: 20px 20px;
+}

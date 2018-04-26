@@ -16,12 +16,10 @@ import { ModalComponent } from './core/modal/modal.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { NotificationComponent } from './components/notification/notification.component';
 import { PastBillsComponent } from './components/past-bills/past-bills.component';
-import { CurrentBillComponent } from './components/current-billdetails/current-billdetails.component';
 import { ChartsModule } from 'ng2-charts';
 import { UserManagementComponent } from './pages/user-management/user-management.component';
 import { BillPayComponent } from './pages/bill-pay/bill-pay.component';
 import { JsonService } from './services/jsonServices.service';
-import { NotificationService } from './notification.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +33,6 @@ import { NotificationService } from './notification.service';
     WelcomeComponent,
     NotificationComponent,
     PastBillsComponent,
-    CurrentBillComponent,
     UserManagementComponent,
     BillPayComponent
   ],
@@ -43,6 +40,7 @@ import { NotificationService } from './notification.service';
     ChartsModule,
     FormsModule,
     HttpModule,
+    ReactiveFormsModule,
     BrowserModule.withServerTransition({appId: 'my-app'}),
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full'},
@@ -52,7 +50,7 @@ import { NotificationService } from './notification.service';
     ]),
     TransferHttpCacheModule
   ],
-  providers: [JsonService, NotificationService],
+  providers: [JsonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

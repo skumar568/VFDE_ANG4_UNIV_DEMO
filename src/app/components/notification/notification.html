@@ -4,18 +4,18 @@
       <div class="notification-header">
           <div class="header-content">
             <span class="float-left"><b>Notification</b> 2 new Notification</span>
-            <span class="float-right"> <b>&gt; <a>all notification</a></b></span>
+            <span class="float-right"> <b>&gt; <a>all notifications</a></b></span>
         </div>
       </div>
 
-          <<div class="row" *ngFor="let notification of notifications">
-              <div class="col-lg-1"><img src=""></div>
-              <div class="col-lg-1">{{notification.date}}</div>
-              <div class="col-lg-4">{{notification.title}}</div>
-              <div class="col-lg-4">{{notification.description}}</div>
-              <div class="col-lg-1">X</div>
-              <div class="col-lg-1">New</div>
-              <div>{{item.role}}</div>
+          <div *ngFor="let item of notification.notifications">
+            <div *ngIf="item.role === type" class="row">
+              <div class="col-lg-2"><img class="icon" src="../../../assets/images/avatar.png"> <span class="date">{{item.date}}</span></div>
+              <div class="col-lg-2">{{item.title}}</div>
+              <div class="col-lg-6">{{item.description}}</div>
+              <div class="col-lg-2"><img class="icon" src="../../../assets/images/left2.png"> <img class="icon" src="../../../assets/images/delete.png"></div>
+            </div>
+
           </div>
       </div>
   </div>

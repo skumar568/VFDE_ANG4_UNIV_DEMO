@@ -1,3 +1,11 @@
+.graph-notification{
+  width: 100%;
+  background: #fff;
+  padding: 20px 20px;
+  font-size: 12px;
+  margin-top:20px;
+}
+
 .dashboard{
   padding: 30px 0;
   background: #ccc;

@@ -10,6 +10,13 @@
   margin: auto;
   display: block;
 }
+.graph-bill{
+  width:100%;
+  background: #fff;
+  padding: 20px 20px;
+  font-size: 12px;
+  margin-top:20px;
+}
 .dashboard-header{
   padding:30px 10px;
 }

@@ -2,6 +2,10 @@
   padding: 30px 0;
   margin: auto;
 }
+.flyout-dropdown ul{
+  list-style: none;
+  text-align: left;
+}
 .flyout-dropdown .row div{
   border-right: 1px solid #ddd;
   box-sizing: border-box;

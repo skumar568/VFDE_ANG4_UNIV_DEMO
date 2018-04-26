@@ -2,9 +2,9 @@
   <div class="container">
     <app-welcome></app-welcome>
     <app-notification></app-notification>
-    <div *ngIf="!show">
+    <div *ngIf="!show" class="graph-notification">
 
-    
+      <h4>Rechnung</h4>
       <canvas
               baseChart
               [chartType]="'bar'"
